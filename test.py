@@ -1,9 +1,19 @@
 import time
+from random_word import RandomWords
 
-words = {}
+r = RandomWords()
 
-def randomWord():
-    #code
+# makes array of words and chooses them
+
+words = []
+
+wordNum = int(input("How many words per sentence: "))
+
+for x in range(0,wordNum):
+    words.append(r.get_random_word())
+
 
 def sentence():
-    #code
+    sentence = words[0]
+    for x in range(1,len(words)):
+        sentence = sentence + " " + words[x]
