@@ -1,9 +1,9 @@
-from tkinter import *
+import time
 
-window = Tk()
-window.title("Touch Type Test")
+words = {}
 
-lbl = Label(window, text="Touch Type Test")
-lbl.grid(column=0, row=0)
+def randomWord():
+    #code
 
-window.mainloop()
+def sentence():
+    #code
